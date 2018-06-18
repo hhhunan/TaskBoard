@@ -1,0 +1,221 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+
+/*
+ * Typography
+ */
+
+h1 {
+  margin-bottom: 20px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 51px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  border-right: 3px solid #3e07e6;
+}
+
+/* Sidebar navigation */
+.sidebar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.sidebar .nav {
+  margin-bottom: 20px;
+}
+
+.sidebar .nav-item {
+  width: 100%;
+
+}
+
+.sidebar .nav-item + .nav-item {
+  margin-left: 0;
+}
+
+.sidebar .nav-link {
+  border-radius: 0;
+}
+
+/*
+ * Dashboard
+ */
+
+/* Placeholders */
+.placeholders {
+  padding-bottom: 3rem;
+}
+
+.placeholder img {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/*my style css*/
+
+
+.nav-link:hover {
+  color: white;
+}
+
+.active:after {
+  content: none !important;
+}
+
+.menu_icon {
+  color: white;
+  width: 40px;
+  line-height: 40px;
+  font-size: 24px;
+  margin-left: 10%;
+  float: left;
+}
+
+/*sdfgahsdjkflg;'.lgkfjdhsgafdfsghkjl'*/
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa {
+  position: relative;
+  display: table-cell;
+  width: 60px;
+  height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.main-menu:hover, nav.main-menu.expanded {
+  width: 200px;
+
+}
+
+.main-menu {
+  background: #212121;
+  border-right: 2px solid #e5e5e5;
+
+  position: fixed;
+  top: 54px;
+  bottom: 0;
+  height: 100%;
+  padding-top: 30px;
+  left: 0;
+  width: 60px;
+  overflow: hidden;
+  transition: width .55s linear !important;
+  z-index: 1000;
+}
+
+/*.main-menu > ul {*/
+/*}*/
+
+.main-menu li {
+  position: relative;
+  display: block;
+  width: 250px;
+}
+
+.main-menu li > a {
+  position: relative;
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: #999;
+  font-family: arial;
+  font-size: 14px;
+  text-decoration: none;
+  -webkit-transform: translateZ(0) scale(1, 1);
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+
+}
+
+.main-menu .nav-icon {
+  position: relative;
+  display: table-cell;
+  width: 60px;
+  height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.main-menu .nav-text {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 190px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.main-menu > ul.logout {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.no-touch .scrollable.hover {
+  overflow-y: hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+  overflow-y: auto;
+  overflow: visible;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+nav {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+nav ul, nav li {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu li:hover > a, nav.main-menu li.active > a, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus, .no-touch .dashboard-page nav.dashboard-menu ul li:hover a, .dashboard-page nav.dashboard-menu ul li.active a {
+  color: #fff;
+  /*background-color: #025aa5;*/
+}
+
+.area {
+  float: left;
+  background: #e2e2e2;
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
